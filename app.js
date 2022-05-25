@@ -48,7 +48,7 @@ app.use(userLoginReg)
 
 
 
-app.listen(3030 || process.env.PORT, () => {
-    console.log("app listening at port 3030")
+app.listen(process.env.PORT || 3000, () => {
+    console.log("app listening at port "+ process.env.PORT || 3000)
 })
 
